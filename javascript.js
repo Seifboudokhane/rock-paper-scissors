@@ -18,7 +18,7 @@ function playRound(playerSelection, computerSelection){
     playerSelection = playerSelection.toUpperCase();
 
     if (playerSelection == computerSelection){
-        console.log("It's A Draw!");
+        console.log(`Draw! you both chose ${computerSelection}`);
         return 0;
     }else if((playerSelection == "ROCK" && computerSelection == "SCISSORS")||(playerSelection == "PAPER" && computerSelection == "ROCK") || (playerSelection == "SCISSORS" && computerSelection == "PAPER")){
         console.log(`You Win! ${playerSelection} beats ${computerSelection}`);
@@ -49,11 +49,11 @@ function game(){
         }
     }
     if(playerScore==computerScore){
-        return "IT'S A DRAW!";
+        return "IT'S A DRAWN GAME!";
     }else if(playerScore>computerScore){
-        return "YOU WIN!";
+        return "YOU WON THE GAME!";
     }else {
-        return "YOU LOSE!";
+        return "YOU LOST THE GAME!";
     }
 }
 
