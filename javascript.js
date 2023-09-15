@@ -20,7 +20,7 @@ function playRound(playerSelection, computerSelection){
     if (playerSelection == computerSelection){
         console.log("It's A Draw!");
         return 0;
-    }else if((playerSelection == "Rock" && computerSelection == "SCISSORS")||(playerSelection == "PAPER" && computerSelection == "ROCK") || (playerSelection == "SCISSORS" && computerSelection == "PAPER")){
+    }else if((playerSelection == "ROCK" && computerSelection == "SCISSORS")||(playerSelection == "PAPER" && computerSelection == "ROCK") || (playerSelection == "SCISSORS" && computerSelection == "PAPER")){
         console.log(`You Win! ${playerSelection} beats ${computerSelection}`);
         return 1;
     }else {
