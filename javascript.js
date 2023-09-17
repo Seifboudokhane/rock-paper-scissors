@@ -29,32 +29,32 @@ function playRound(playerSelection, computerSelection){
     }
 }
 
-function game(){
-    let playerScore=0;
-    let computerScore=0;
-    let roundResult;
-    for (let i=0;i<5;i++){
-        let playerSelection=prompt("choose Rock, Paper or scissors");
-        let computerSelection=getComputerChoice();
-        roundResult = playRound(playerSelection,computerSelection);
-        switch(roundResult){
-            case -1:
-                computerScore++;
-                break;
-            case 1:
-                playerScore++;
-                break;
-            case 0:
-                break;
-        }
-    }
-    if(playerScore==computerScore){
-        return "IT'S A DRAWN GAME!";
-    }else if(playerScore>computerScore){
-        return "YOU WON THE GAME!";
-    }else {
-        return "YOU LOST THE GAME!";
-    }
-}
+// function game(){
+//     let playerScore=0;
+//     let computerScore=0;
+//     let roundResult;
+//     for (let i=0;i<5;i++){
+//         let playerSelection=prompt("choose Rock, Paper or scissors");
+//         let computerSelection=getComputerChoice();
+//         roundResult = playRound(playerSelection,computerSelection);
+//         switch(roundResult){
+//             case -1:
+//                 computerScore++;
+//                 break;
+//             case 1:
+//                 playerScore++;
+//                 break;
+//             case 0:
+//                 break;
+//         }
+//     }
+//     if(playerScore==computerScore){
+//         return "IT'S A DRAWN GAME!";
+//     }else if(playerScore>computerScore){
+//         return "YOU WON THE GAME!";
+//     }else {
+//         return "YOU LOST THE GAME!";
+//     }
+// }
 
-console.log(game());
+// console.log(game());
