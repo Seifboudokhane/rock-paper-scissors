@@ -49,12 +49,13 @@ function restartGame(){
     computerScore=0;
     document.getElementById("playerScore").textContent=playerScore;
     document.getElementById("computerScore").textContent=computerScore;
+    document.getElementById("roundResult").textContent="No rounds were played"
     document.getElementById("gameOver").textContent="";
 }
-const rock = document.querySelector(".rock");
-const paper = document.querySelector(".paper");
-const scissors = document.querySelector(".scissors");
-const restart = document.querySelector(".restart");
+const rock = document.querySelector("#rock");
+const paper = document.querySelector("#paper");
+const scissors = document.querySelector("#scissors");
+const restart = document.querySelector("#restart");
 
 rock.addEventListener("click",()=>playRound("rock"));
 paper.addEventListener("click",()=>playRound("paper"));
