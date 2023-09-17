@@ -10,6 +10,7 @@
 body {
     background-color: #323c48;
     color: #eceff2;
+    text-align: center;
 }
 
 .gameTitle{
@@ -29,6 +30,12 @@ h1 {
     line-height: 1.6;
 }
 
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 button {
     padding: 17px 40px;
     border-radius: 10px;
@@ -39,6 +46,8 @@ button {
     transition: all .3s ease;
     box-shadow: rgb(201, 46, 70) 0px 10px 0px 0px;
     color: hsl(0, 0%, 100%);
+    width: 190px;
+    margin: 20px;
 }
 
 button:hover {
