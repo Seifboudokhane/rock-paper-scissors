@@ -1,2 +1,3 @@
 # rock-paper-scissors
-the rock paper scissors project from TheodinProject
+a rock-paper-scissors project game against a bot (random chance) using JavaScript.
+[Live Demo](https://seifboudokhane.github.io/rock-paper-scissors/) :point_left:
